@@ -1,0 +1,92 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hej
+    - hejka
+    - siemka
+    - dzien dobry
+    - dobry wieczor
+    - witam
+
+- intent: goodbye
+  examples: |
+    - pa
+    - papa
+    - do zobaczenia
+    - dowidzenia
+    - dobranoc
+    - milego dnia
+    - do zobaczenia pozniej
+
+- intent: affirm
+  examples: |
+    - tak
+    - dobrze 
+    - na pewno
+    - oczywiscie
+    - to brzmi dobrze
+    - poprawnie
+    - poprawny
+    - poprawna
+    - poprawne
+    - zaiste
+
+- intent: deny
+  examples: |
+    - nie
+    - nigdy
+    - nie wydaje mi sie
+    - nie ma takiej mozliwosci
+    - nie ma opcji
+    - raczej nie
+
+- intent: mood_great
+  examples: |
+    - perfekcyjnie
+    - niezle
+    - wspaniale
+    - czuje sie jak krol
+    - super
+    - czuje sie bardzo dobrze
+    - jest mi dobrze
+    - jest mi wpsaniale
+    - uratuje swiat
+    - niezwykle dobrze
+    - tak bardzo perfekcyjnie 
+    - tak dobrze
+    - tak perfekcyjnie
+
+- intent: mood_unhappy
+  examples: |
+    - moj dzien byl okropny
+    - jestem smutna
+    - jestem smutny
+    - nie czuje sie zbyt dobrze
+    - jestem zawiedziony
+    - jestem zawiedziona
+    - super smutny
+    - super smutna
+    - jestem taki smutny
+    - jestem taka smutny
+    - smutna
+    - smutny
+    - tak smutna
+    - tak smutny
+    - bardzo smutna
+    - bardzo smutny
+    - nieszczesliwa
+    - nieszczesliwy
+    - niedobrze
+    - nie za dobrze
+    - ekstremalnie smutna
+    - ekstremalnie smutny
+   
+
+- intent: bot_challenge
+  examples: |
+    - czy jestes botem?
+    - czy jestes czlowiekiem?
+    - czy rozmawiam z botem?
+    - czy rozmawiam z czlowiekiem?
