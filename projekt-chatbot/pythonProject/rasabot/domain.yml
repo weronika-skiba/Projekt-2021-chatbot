@@ -11,14 +11,14 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hej! Jak u ciebie?"
+  - text: "Hej! Jak u Ciebie?"
 
   utter_cheer_up:
-  - text: "Tu jest cos, zeby cie pocieszyc:"
+  - text: "Tu jest coś, żeby cie pocieszyć:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Czy to ci pomoglo?"
+  - text: "Czy to ci pomogło?"
 
   utter_happy:
   - text: "Super, kontynuuj!"
@@ -27,7 +27,7 @@ responses:
   - text: "Papa"
 
   utter_iamabot:
-  - text: "Jestem botem, napedzanym przez Rasa."
+  - text: "Jestem botem, napędzanym przez Rasa."
 
 session_config:
   session_expiration_time: 60

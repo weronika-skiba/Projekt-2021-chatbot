@@ -56,7 +56,7 @@ stories:
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      nie do konca
+      nie do końca
     intent: deny
   - action: utter_goodbye
 
@@ -67,7 +67,7 @@ stories:
     intent: greet
   - action: utter_greet
   - user: |
-      bardzo zle
+      bardzo źle
     intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
@@ -86,6 +86,6 @@ stories:
 - story: bot challenge
   steps:
   - user: |
-      czy jestes botem?
+      Czy jesteś botem?
     intent: bot_challenge
   - action: utter_iamabot

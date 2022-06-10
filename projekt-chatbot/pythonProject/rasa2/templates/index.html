@@ -52,35 +52,19 @@
 		  <p>Jestem asystentem Rasa. Możesz zacząć mówiąc: Hej.</p>
 		</div>
 
-		<div class="container second">
-		  <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="Avatar" class="right">
-		  <p>{{text1}}</p>
-		</div>
-
-		<div class="container first">
-		  <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="Avatar">
-		  <p>{{text2}}</p>
-		</div>
-
-		<div class="container second">
-		  <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="Avatar" class="right" alt="Avatar" class="right">
-		  <p>{{text3}}</p>
-		</div>
-
-		<div class="container first">
-		  <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="Avatar">
-		  <p>{{text4}}</p>
-		</div>
-
-		<div class="container second">
-		  <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="Avatar" class="right">
-		  <p>{{text5}}</p>
-		</div>
-
-		<div class="container first">
-		  <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="Avatar">
-		  <p>{{text6}}</p>
-		</div>
+		{% for text in texts %}
+			{% if text.s_type == "q" %}
+				<div class="container second">
+				  <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="Avatar" class="right">
+				  <p>{{text.s_text}}</p>
+				</div>
+			{% elif text.s_type == "a" %}
+				<div class="container first">
+					<img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="Avatar">
+		  			<p>{{text.s_text}}</p>
+				</div>
+			{% endif %}
+		{% endfor %}
 
 		<div>
 			<form method="post" action='' >
